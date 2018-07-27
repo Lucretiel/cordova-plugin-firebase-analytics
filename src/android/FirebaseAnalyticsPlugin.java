@@ -1,4 +1,4 @@
-package by.chemerisuk.cordova.firebase;
+package com.google.cordova.firebase.analytics;
 
 import android.content.Context;
 import android.os.Bundle;
