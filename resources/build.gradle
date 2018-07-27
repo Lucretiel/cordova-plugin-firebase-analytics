@@ -9,3 +9,13 @@ buildscript {
 ext.postBuildExtras = {
     apply plugin: com.google.gms.googleservices.GoogleServicesPlugin
 }
+
+repositories {
+	google()
+}
+
+allprojects {
+    repositories {
+        google()
+    }
+}
