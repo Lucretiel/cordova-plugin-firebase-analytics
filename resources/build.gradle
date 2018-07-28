@@ -1,11 +1,6 @@
 repositories {
 	google()
 	mavenCentral()
-	jcenter()
-
-	maven {
-        url "https://maven.google.com"
-    }
 }
 
 
@@ -17,10 +12,5 @@ buildscript {
     repositories {
 		google()
 		mavenCentral()
-		jcenter()
-
-		maven {
-        	url "https://maven.google.com"
-    	}
 	}
 }
