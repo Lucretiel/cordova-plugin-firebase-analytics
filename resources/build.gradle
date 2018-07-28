@@ -2,15 +2,12 @@ repositories {
 	google()
 	mavenCentral()
 	jcenter()
+
+	maven {
+        url "https://maven.google.com"
+    }
 }
 
-allprojects {
-    repositories {
-		google()
-		mavenCentral()
-		jcenter()
-	}
-}
 
 buildscript {
     dependencies {
@@ -21,11 +18,9 @@ buildscript {
 		google()
 		mavenCentral()
 		jcenter()
-	}
-}
 
-// apply plugin: 'com.google.gms.google-services'
-// class must be used instead of id(string) to be able to apply plugin from non-root gradle file
-ext.postBuildExtras = {
-    apply plugin: com.google.gms.googleservices.GoogleServicesPlugin
+		maven {
+        	url "https://maven.google.com"
+    	}
+	}
 }
