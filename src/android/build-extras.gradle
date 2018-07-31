@@ -1,6 +1,0 @@
-// It's probably worth noting that I have literally no idea how it is that this
-// file ends up being used by the plugin. There's no reference to it anywhere,
-// and there's nothing in the docs about plugin/src/android/build-extras.gradle
-// being used for anything.
-
-apply plugin: 'com.google.gms.google-services'
