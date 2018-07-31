@@ -3,6 +3,7 @@ var PLUGIN_NAME = "FirebaseAnalytics";
 
 module.exports = {
     logEvent: function(name, params) {
+        // TODO: validate params
         return new Promise(function(resolve, reject) {
             exec(resolve, reject, PLUGIN_NAME, "logEvent", [name, params || {}]);
         });
